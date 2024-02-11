@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/raw.githubusercontent.com_itchief_ui-components_master_slider_itc-slider.css">
+    <link rel="stylesheet" href="css/animated-accordion.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="contener contener__header">
+        <div class="logo">
+        <button onclick="logo_button()" class="logo__btn">логотип</button>
+        <div class="logo_btr">
+            <ul class="logo__list">
+            <li class="logo-iten">логотип</li>
+            <li onclick="light" class="logo-iten"><img src="img/" alt=""></li>
+            <li onclick="dark" class="logo-iten"><img src="img/" alt=""></li>
+        </ul>
+        </div>
+    </div>
+    <nav class="hedear__nav">
+        <ul class="header__list">
+            <li class="header__item"><a href="" class="header__linc">главная</a></li>
+            <li class="header__item"><a href="" class="header__linc">корзина</a></li>
+            <li class="header__item"><a href="" class="header__linc"акции></a></li>
+            <li class="header__item"><a href="" class="header__linc">реклама</a></li>
+        </ul>
+    </nav>
+    <div class="burger" onclick="burger()">
+<div class="burger__line"></div>
+<div class="burger__line"></div>
+<div class="burger__line"></div>
+    </div>
+</div>
+    </header>
+    <main>
+      <section class="video">
+        <video autoplay muted loop id="anime"> 
+        <source src="video/Beautiful Anime Scenery at Night __ AMV __ [1080p] (720p).mp4" type="video/mp4">
+        </video>
+        <div class="contant">
+          <h1>видео</h1>
+          <button onclick="pause()" class="vbutton">play</button>
+          <button class="vbutton">mute</button>
+          <button class="vbutton">prev</button>
+          <button class="vbutton">next</button>
+
+        </div>
+      </section>
+        <section class="product">
+            <div class="contener">
+            <h1 class="product_heading"></h1>
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item">
+                            <img class="product_img" src="img/25.jpg" alt="">
+                        </div>
+                        <div class="itc-slider-item">
+                            <img class="product_img" src="img/35.jpg" alt="">
+                        </div>
+                        <div class="itc-slider-item">
+                            <img class="product_img" src="img/Без названия.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+            </div>
+
+            <p class="product_description"></p>
+            <button id="btn_buy" onclick="buy" class="product_button">покупка</button>
+            <p class="product__price">10$</p>
+            <div class="accordion" id="accordion-1">
+                <div class="accordion__item">
+                  <div class="accordion__header">
+                    вкусы
+                  </div>
+                  <div class="accordion__body">
+                    банан
+                  </div>
+                  <div class="accordion__body">
+                    клубника
+                  </div>
+                  <div class="accordion__body">
+                    киви
+                  </div>
+                  <div class="accordion__body">
+                    арбуз
+                  </div>
+                  <div class="accordion__body">
+                    гранат
+                  </div>
+                  <div class="accordion__body">
+                    ваниль
+                  </div>
+                  <div class="accordion__body">
+                    шеколад
+                  </div>
+                  <div class="accordion__body">
+                    крем-брюле
+                  </div>
+                  <div class="accordion__body">
+                    пломбир с шеколадной крошкой
+                  </div>
+                  <div class="accordion__body">
+                    фисташка
+                  </div>
+                  <div class="accordion__body">
+                    малина
+                  </div>
+                  <div class="accordion__body">
+                    земляника
+                  </div>
+                  <div class="accordion__body">
+                    бабл-гам
+                  </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="map_shop">
+            <div class="contener">
+                <h2>наши магазины</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4608.895177746798!2d20.495990677412763!3d54.719341458095464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e31603cd176657%3A0x3fb54a17bf967dea!2z0JbQtdC70LDRgtC10YDQuNGPINCY0YLQsNC70LjRjw!5e0!3m2!1sru!2sru!4v1701004567506!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="basket">
+            <div class="basket__container">
+                <a class="basket__link" href="">
+                    <img class="basket__picture" src="img/icons.png">
+                </a>
+                <p class="basket__prise">0$</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+      
+        </div>
+    </footer>
+    <script src="script/btn.js"></script>
+    <script src="script/its-slider.js"></script>
+    <script src="script/logo_minu.js"></script>
+    <script src="script/animated-accordion.js"></script>
+    <script src="script/filtr.js"></script>
+    <script src="script/burger.js"></script>
+    <script src="script/video.js"></script>
+
+</body>
+
+</html>

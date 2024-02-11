@@ -1,0 +1,130 @@
+.product_img {
+    height: 300px;
+    width: 260px;
+    display: block;
+    margin: 0 auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__list {
+    display: flex;
+    align-items: center;
+    transform: translateX(-70%) scale(0.3);
+    position: relative;
+    z-index: -1;
+    transition: all 0.5.s ease;
+}
+.logo_back{
+    transform: translateX(0%) scale(1);
+    z-index: 1;
+}
+.logo__btn {
+    height: 50px;
+    width: 100px;
+}
+.contener {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+background: gray;
+padding: 50px;
+}
+.contener__header {
+    display: flex;
+    justify-content: space-between;
+}
+.burger__line {
+    width: 30px;
+    height: 5px;
+    background: black;
+    margin: 5px;
+}
+.gds__list{
+    list-style: none;
+    border: 1px solid black;
+}
+.gds__item{
+    border: 1px solid black;
+}
+
+.burger {
+    display: none;
+}
+.video{
+    position: relative;
+}
+.contant{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 15px;
+}
+.basket__container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.basket__prise {
+    order: -1;
+}
+
+#anime{
+    width: 100%;
+}
+
+.hide_f1{
+    display: none;
+}
+
+@media screen and (max-width: 960px){
+.header__list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    background: burlywood;
+    top: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    z-index: 3;
+    transform: translateX(100%);
+    transition: all 1s ease;
+}
+.burger {
+    display: block;
+    z-index: 4;
+}
+
+}
+.header__item {
+    margin: auto 0;
+}
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1 1 auto;
+}
+.hide{
+    transform: translateX(0%);
+}
+    
+
+
+
+
